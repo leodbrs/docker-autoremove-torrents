@@ -1,6 +1,9 @@
 name: Docker Build and Push
 
 on:
+  workflow_dispatch:
+  release:
+    types: [created]
   push:
     branches: ["main"]
   pull_request:
